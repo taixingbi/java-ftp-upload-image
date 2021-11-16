@@ -1,15 +1,11 @@
-package hello;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
+package hello.ftp;
 
 import org.apache.commons.net.PrintCommandListener;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;
+
+import java.io.*;
 
 public class FTPUploader {
     FTPClient ftp = null;
@@ -46,8 +42,4 @@ public class FTPUploader {
             }
         }
     }
-
-
-
-
 }
